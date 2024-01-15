@@ -93,7 +93,7 @@ header button {
     font-size: 24px;
 }
 
-.addRecipe input[type="text"] {
+.addRecipe input[type="text"], .addRecipe input[type="number"] {
     width: calc(100%/12*10);
     padding: 1rem 1rem;
     border-radius: 5px;
@@ -130,7 +130,7 @@ header button {
 }
 
 
-.addRecipe label, img, span, input {
+.addRecipe label, img, span, input, #category {
     line-height: 24px;
     margin: 1rem 5rem;
 }
@@ -148,3 +148,61 @@ input[type="text"]::placeholder {
     font-size: 17px;
     line-height: 30px;
 }
+
+#addIngredients, #addInstruction {
+    color: rgba(56, 151, 240, 1);;
+    cursor: pointer;
+}
+
+
+#stepsInstruction {
+    line-height: 50px;
+    font-size: 18px;
+}
+
+.serv1, .cook1,.prep1{
+    font-size: 13px;
+    color: rgba(177, 177, 177, 1);
+}
+
+/* #tapToEdit {
+    font-size: 12px;
+    color: rgba(155, 155, 155, 1);
+    line-height: 50px;
+} */
+.cookingTimeContainer, .prepTimeContainer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.cookingTimeContainer input[type="number"], .prepTimeContainer input[type="number"]{
+    width: calc(100%/12*8);
+}
+
+#category {
+    width: 330px;
+    height: 60px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border:1px solid rgba(186, 183, 183, 1);
+    font-size: 21px;
+    padding: 1rem;
+}
+
+/* inbox */
+.inbox-discussion {
+    width: 80%;
+    height: 50vh;
+    margin: 0 12rem;
+    background-color: rgba(231, 249, 253, 1);
+    border-radius: 60px;
+    border: solid;
+    padding-top: 2rem;
+}
+
+.inbox-text {
+    width: 50%;
+    margin: auto;
+    border: solid;
+}
+

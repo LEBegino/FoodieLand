@@ -59,7 +59,58 @@
             <div id="ingredientContainer">
                 <input type="text" name="ingredients" id="ingredients" placeholder="Add ingredients" maxlength="100"><br>
             </div>
-            <span id="addIngredients" onclick="addIngredient()" style="cursor: pointer;">+ Add Ingredient</span>
+            <span id="addIngredients" onclick="addIngredient()" style="cursor: pointer;">+ Add Ingredient</span><br><br>
+
+            <!-- Instruction -->
+            <label for="instruction">Instructions</label><br>
+            <!-- <span id="tapToEdit">Tap to edit</span><br> -->
+            <span id="stepsInstruction">Step 1:</span>
+            <div class="instructionContainer">
+                <input type="text" name="instructions" id="instructions" placeholder="Add Instruction">
+            </div>
+            <span id="addInstruction" onclick="addInstruction()">+ Add Instruction</span><br><br>
+
+            <!-- Servings -->
+            <label for="servings">Servings: </label><br>
+            <input type="number" name="numServing" id="numServing" required placeholder="#">
+            <span class="serv1">how many does this recipe make?</span><br><br>
+
+            <!-- Cooking Time -->
+            <label for="cookingTime">Cooking Time: </label>
+            <div class="cookingTimeContainer">
+                <input type="number" name="hours" id="hours" placeholder="Hours 0">
+                <input type="number" name="minutes" id="minutes" placeholder="Minutes 0">
+            </div>
+            <span class="cook1">How long does it take to cook this recipe?</span><br><br>
+
+            <!-- Preparation Time -->
+            <label for="prepTime">Preparation Time: </label>
+            <div class="prepTimeContainer">
+                <input type="number" name="hours" id="hours" placeholder="Hours 0">
+                <input type="number" name="minutes" id="minutes" placeholder="Minutes 0">
+            </div>
+            <span class="prep1">How long does it take to prepare this recipe?</span><br><br>
+
+            <!-- category -->
+            <label for="category">Category: </label><br>
+            <select name="category" id="category">
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+                <option value="appetizer">Appetizer</option>
+                <option value="drinks">Drinks</option>
+            </select>
+        </div>
+
+        <!-- inbox -->
+        <div class="inbox-discussion">
+            <div class="inbox-text">
+                <h2>Deliciousness to your inbox</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut
+                enim ad minim</p>
+            </div>
+            <!-- <input type="email" name="discussion" id="discussion" placeholder="Your email address...">
+            <input type="submit" value="Subscribe"> -->
         </div>
     </div>
 </body>
