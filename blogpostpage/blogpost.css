@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    font-family: Inter;
+}
+
+body {
+    background-color: #fff;
+}
+
+p {
+    color: rgba(0, 0, 0, 0.60);
+}
+
+/* navigation */
+nav {
+    width: 100%;
+    height: 80px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li,
+.nav-icon {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+nav ul {
+    float: right;
+    line-height: 80px;
+    margin-right: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+    transition: 2s;
+}
+
+label.logo {
+    line-height: 80px;
+    margin: 0 2rem;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: 'Lobster', sans-serif;
+}
+
+.nav-icon {
+    margin-left: 9rem;
+}
+
+.body-page {
+    padding: 20px;
+    width: 100%;
+}
+
+.title-name {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#description {
+    padding: 20px;
+    text-align: center;
+}
+
+#image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#image img {
+  width:1000px;
+  height: 500px;
+  border-radius: 20px;
+}
+
+
+.layout {
+    padding: 20px;
+}
+
+.layout-page1 {
+   display: flex;
+   padding: 20px;
+   width: 200vh;
+   gap: 50px;
+}
+
+.layout-page2,
+.layout-page3,
+.layout-page4,
+.layout-page5 {
+    padding: 20px;
+}
+
+#social-container {
+  width: 120vh;
+}
+
+#socials {
+  padding-top: 10px;
+  text-align: center;
+}
+#name p,
+#name2 p,
+#name3 p,
+#name4 p,
+#name5 p {
+    margin-bottom: 20px;
+}
+
+#image2 img {
+    width: 720px;
+    height: 300px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.rectangle-container {
+  /* Rectangle 25 */
+
+
+
+background: linear-gradient(90deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+}
+
+#rectangle p {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+/* inbox */
+.inbox-discussion {
+  position: relative;
+  width: 80%;
+  height: 50vh;
+  margin: 0 11rem;
+  background-color: rgba(231, 249, 253, 1);
+  border-radius: 60px;
+  /* border: solid; */
+  padding-top: 2rem;
+  overflow: hidden;
+}
+
+.inbox-discussion .salad1 {
+  position: absolute;
+  left: -7.6%;
+}
+
+.inbox-discussion .salad2 {
+  position: absolute;
+  right: -7.7%;
+  margin-top: 6.5rem;
+}
+
+.inbox-text, .subscribeButton {
+  width: 80%;
+  margin: auto;
+  /* border: solid; */
+  text-align: center;
+}
+
+.inbox-text h2 {
+  font-size: 48px;
+}
+
+.inbox-text p {
+  margin: 1rem 0;
+  line-height: 30px;
+}
+
+.subscribeButton {
+  margin-top: 4rem;
+}
+
+.subscribeButton input[type="email"] {
+  position: relative;
+  width: 480px;
+  height: 80px;
+  border-radius: 24px;
+  padding-left: 1rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.subscribeButton input[type="email"]::placeholder {
+  font-size: 14px;
+}
+
+.subscribeButton input[type="submit"]{
+  position: absolute;
+  width: 160px;
+  height: 60px;
+  border-radius: 16px;
+  background-color: #000000;
+  color: #FFFFFF;
+  right: 28%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* footer */
+
+footer {
+  margin: 10rem 0 0 4rem;
+  width: 90%;
+  height: 30vh;
+}
+
+
+.upper-footer ul li {
+  display: inline-block;
+  padding: 0 1rem;
+  font-size: 19px;
+}
+
+.upper-footer {
+  padding-bottom: 4rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.upper-footer ul {
+  float: right;
+  line-height: 80px;
+}
+
+.upper-footer a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.upper-footer label {
+  line-height: 80px;
+  font-family: 'Lobster', sans-serif;
+  font-size: 24px;
+}
+
+.lower-footer span {
+  line-height: 80px;
+  margin-left: 30rem;
+  font-size: 18px;
+}
+
+.lower-footer ul li {
+  display: inline-block;
+  padding: 0 1rem;
+  line-height: 80px;
+}
+
+.lower-footer a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.lower-footer ul {
+  float: right;
+}
+
