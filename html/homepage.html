@@ -3,95 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/inboxDiscussion.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="shortcut icon" href="../Images/Foodieland..png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
     <title>Foodie Land</title>
 </head>
+
 <body>
-    <div class="container">
-
-        <!--HEADER SECTION-->
-        <div class="header-container">
-            <div class="row">
-
-                <div class="logo-name">Foodieland</div>
-
-                <div class="header-nav">
-                    <div class="row">
-                        <div><a href="#"></a>Home</div>
-                        <div><a href="#"></a>Recipes</div>
-                        <div><a href="#"></a>Blog</div>
-                        <div><a href="#"></a>Contact</div>
-                        <div><a href="#"></a>About Us</div>
-                    </div>
-                </div>
-
-                <div class="header-socmed">
-                    <div class="row">
-                        <div><a href="#"></a><i class="fa-brands fa-facebook"></i></div>
-                        <div><a href="#"></a><i class="fa-brands fa-twitter"></i></div>
-                        <div><a href="#"></a><i class="fa-brands fa-square-instagram"></i></div>
-                    </div>
-                </div>
-
+    <!-- navigation -->
+    <nav>
+        <label class="logo">FoodieLand</label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About Us</a></li>
+            <div class="nav-icon">
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
             </div>
-        </div>
+        </ul>
+    </nav>
 
 
+
+    <!---------------------HOMEPAGE CONTAINER---------------------->
+    <div class="container">
 
         <!--TRENDING RECIPE SECTION-->
         <!--CONSIST OF 2 DIVS IN ONE CONTAINER-->
         <div class="trend-recipe-container">
             <div class="row">
+
                 <!--FIRST-->
                 <div class="trend-detail">
-                    <p>Spicy delicious chicken wings</p>
-                    <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, 
+                    <span class="trend-label">Spicy delicious chicken wings</span>
+                    <span class="trend-text">
+                        Lorem ipsum dolor sit amet, consectetuipisicing elit, 
                         sed do eiusmod tempor incididunt ut labore et dolore 
-                        magna aliqut enim ad minim 
-                    </p>
+                        magna aliqut enim ad minim
+                    </span>
+
                     <div class="time-category">
-                        <div class="time"><a href="#"><i class="fa-solid fa-stopwatch"></i> 30 Minutes</a></div>
-                        <div class="food-category"><a href="#"><i class="fa-solid fa-utensils"></i> Chicken</a></div>
+                        <div class="row">
+                            <div class="time"><i class="fa-solid fa-stopwatch"></i> 30 Minutes</div>
+                            <div class="food-category"><i class="fa-solid fa-utensils"></i> Chicken</div>
+                        </div>
                     </div>
-                    <div class="view-recipe">View Recipe</div>
+
+                    <div class="view-recipe">
+                        <a href="">View Recipe <i class="fa-solid fa-circle-play"></i></a>
+                    </div>
                 </div>
 
                 <!--SECOND-->
-                <img src="../Images/chicken-wing.png" alt="Image">
+                <div class="trend-image">
+                    <img src="../Images/chicken-wing.png" alt="Image">
+                </div>
             </div>
         </div>
 
-
-
+        
+        
         <!--CATEGORIES SECTION-->
         <div class="categories-container">
-            <p class="title">Categories</p>
-            <div class="row">
+            <span class="title">Categories</span>
 
-                <div class="breakfast">
-                    <img src="../Images/breakfast.png" alt="Image">
-                    <p>Breakfast</p>
-                </div>
-                <div class="vegan">
-                    <img src="../Images/lettuce.png" alt="Image">
-                    <p>Vegan</p>
-                </div>
-                <div class="meat">
-                    <img src="../Images/steak.png" alt="Image">
-                    <p>Meat</p>
-                </div>
-                <div class="dessert">
-                    <img src="../Images/cake.png" alt="Image">
-                    <p>Dessert</p>
-                </div>
-                <div class="lunch">
-                    <img src="../Images/sandwich.png" alt="Image">
-                    <p>Lunch</p>
-                </div>
-                <div class="chocolate">
-                    <img src="../Images/chocolate.png" alt="Image">
-                    <p>Chocolate</p>
-                </div>
+            <div class="categories-tabs">
+                <div class="row">
 
+                    <div class="tab">
+                        <img src="../Images/bacon.png" alt="Image">
+                        <div class="tab-text">
+                            <span>Breakfast</span>
+                        </div>
+                    </div>
+
+                    <div class="tab">
+                        <img src="../Images/lettuce.png" alt="Image">
+                        <div class="tab-text">
+                            <span>Vegan</span>
+                        </div>
+                    </div>
+
+                    <div class="tab">
+                        <img src="../Images/steak.png" alt="Image">
+                        <div class="tab-text">
+                            <span>Meat</span>
+                        </div>
+                    </div>
+
+                    <div class="tab">
+                        <img src="../Images/cake.png" alt="Image">
+                        <div class="tab-text">
+                            <span>Dessert</span>
+                        </div>
+                    </div>
+
+                    <div class="tab">
+                        <img src="../Images/salad.png" alt="Image">
+                        <div class="tab-text">
+                            <span>Lunch</span>
+                        </div>
+                    </div>
+
+                    <div class="tab">
+                        <img src="../Images/coffee.png" alt="Image">
+                        <div class="tab-text">
+                            <span>Chocolate</span>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
 
@@ -99,79 +130,111 @@
 
         <!--SIMPLE RECIPE SECTION-->
         <div class="simple-container">
-            <p class="title">Simple and tasty recipes</p>
-            <p class="des">Lorem ipsum dolor sit amet, consectetuipisicing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore 
-                magna aliqut enim ad minim
-            </p>
 
-            <div class="row">
-
-                <div class="simple-tab">
-                    <img src="../Images/burger.png" alt="Image">
-                    <div class="recipe-name">Big and Juicy Wagyu Beef Cheeseburger</div>
-                    <i class="fa-solid fa-stopwatch"> 30 Minutes</i>
+            <div class="simple-heading">
+                <span class="title">Simple and tasty recipes</span>
+                <div class="des">
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetuipisicing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore 
+                        magna aliqut enim ad minim
+                    </span>
                 </div>
-                <div class="simple-tab">
-                    <img src="../Images/burger.png" alt="Image">
-                    <div class="recipe-name">Big and Juicy Wagyu Beef Cheeseburger</div>
-                    <i class="fa-solid fa-stopwatch"> 30 Minutes</i>
-                </div>
-                <div class="simple-tab">
-                    <img src="../Images/burger.png" alt="Image">
-                    <div class="recipe-name">Big and Juicy Wagyu Beef Cheeseburger</div>
-                    <i class="fa-solid fa-stopwatch"> 30 Minutes</i>
-                </div>
-                <div class="simple-tab">
-                    <img src="../Images/burger.png" alt="Image">
-                    <div class="recipe-name">Big and Juicy Wagyu Beef Cheeseburger</div>
-                    <i class="fa-solid fa-stopwatch"> 30 Minutes</i>
-                </div>
-                <div class="simple-tab">
-                    <img src="../Images/burger.png" alt="Image">
-                    <div class="recipe-name">Big and Juicy Wagyu Beef Cheeseburger</div>
-                    <i class="fa-solid fa-stopwatch"> 30 Minutes</i>
-                </div>
-                <div class="simple-tab">
-                    <img src="../Images/burger.png" alt="Image">
-                    <div class="recipe-name">Big and Juicy Wagyu Beef Cheeseburger</div>
-                    <i class="fa-solid fa-stopwatch"> 30 Minutes</i>
-                </div>
-                <div class="simple-tab">
-                    <img src="../Images/burger.png" alt="Image">
-                    <div class="recipe-name">Big and Juicy Wagyu Beef Cheeseburger</div>
-                    <i class="fa-solid fa-stopwatch"> 30 Minutes</i>
-                </div>
-                <div class="simple-tab">
-                    <img src="../Images/burger.png" alt="Image">
-                    <div class="recipe-name">Big and Juicy Wagyu Beef Cheeseburger</div>
-                    <i class="fa-solid fa-stopwatch"> 30 Minutes</i>
-                </div>
-                <div class="simple-tab">
-                    <img src="../Images/burger.png" alt="Image">
-                    <div class="recipe-name">Big and Juicy Wagyu Beef Cheeseburger</div>
-                    <i class="fa-solid fa-stopwatch"> 30 Minutes</i>
-                </div>
-
             </div>
+
+            <!--CONTAINER NG TABS-->
+            <div class="simple-tabs">
+                <div class="row">
+
+                    <div class="tab">
+                        <img src="../Images/burger.png" alt="Image">
+                        <div class="recipe-name">Big and Juicy Wagyu Beef Cheeseburger</div>
+                        
+                        <div class="time"><i class="fa-solid fa-stopwatch"></i> 30 Minutes</div>
+                    </div>
+
+                    <div class="tab">
+                        <img src="../Images/burger.png" alt="Image">
+                        <div class="recipe-name">Big and Juicy Wagyu Beef Cheeseburger</div>
+                        
+                        <div class="time"><i class="fa-solid fa-stopwatch"></i> 30 Minutes</div>
+                    </div>
+
+                    <div class="tab">
+                        <img src="../Images/burger.png" alt="Image">
+                        <div class="recipe-name">Big and Juicy Wagyu Beef Cheeseburger</div>
+                        
+                        <div class="time"><i class="fa-solid fa-stopwatch"></i> 30 Minutes</div>
+                    </div>
+
+                    <div class="tab">
+                        <img src="../Images/burger.png" alt="Image">
+                        <div class="recipe-name">Big and Juicy Wagyu Beef Cheeseburger</div>
+                        
+                        <div class="time"><i class="fa-solid fa-stopwatch"></i> 30 Minutes</div>
+                    </div>
+
+                    <div class="tab">
+                        <img src="../Images/burger.png" alt="Image">
+                        <div class="recipe-name">Big and Juicy Wagyu Beef Cheeseburger</div>
+                        
+                        <div class="time"><i class="fa-solid fa-stopwatch"></i> 30 Minutes</div>
+                    </div>
+
+                    <div class="tab">
+                        <img src="../Images/burger.png" alt="Image">
+                        <div class="recipe-name">Big and Juicy Wagyu Beef Cheeseburger</div>
+                        
+                        <div class="time"><i class="fa-solid fa-stopwatch"></i> 30 Minutes</div>
+                    </div>
+
+                    <div class="tab">
+                        <img src="../Images/burger.png" alt="Image">
+                        <div class="recipe-name">Big and Juicy Wagyu Beef Cheeseburger</div>
+                        
+                        <div class="time"><i class="fa-solid fa-stopwatch"></i> 30 Minutes</div>
+                    </div>
+
+                    <div class="tab">
+                        <img src="../Images/burger.png" alt="Image">
+                        <div class="recipe-name">Big and Juicy Wagyu Beef Cheeseburger</div>
+                        
+                        <div class="time"><i class="fa-solid fa-stopwatch"></i> 30 Minutes</div>
+                    </div>
+
+                    <div class="tab">
+                        <img src="../Images/burger.png" alt="Image">
+                        <div class="recipe-name">Big and Juicy Wagyu Beef Cheeseburger</div>
+                        
+                        <div class="time"><i class="fa-solid fa-stopwatch"></i> 30 Minutes</div>
+                    </div>
+    
+                </div>
+            </div>
+
         </div>
 
-        
+
 
         <!--LEARN MORE SECTION-->
+        <!--CONSIST OF 2 DIVS IN ONE CONTAINER-->
         <div class="learn-container">
             <div class="row">
 
                 <div class="learn-text">
-                    <p class="learn-heading">Everyone can be a chef in their own kitchen</p>
-                    <p class="des">Lorem ipsum dolor sit amet, consectetuipisicing elit, 
+                    <span class="learn-heading">Everyone can be a chef in their own kitchen</span>
+                    <span class="des">
+                        Lorem ipsum dolor sit amet, consectetuipisicing elit, 
                         sed do eiusmod tempor incididunt ut labore et dolore 
                         magna aliqut enim ad minim
-                    </p>
-                    <div class="learn-more">Learn More</div>
+                    </span>
+
+                    <div class="learn-more"><a href="">Learn More</a></div>
                 </div>
 
-                <img src="../Images/chef.png" alt="Image">
+                <div class="learn-image">
+                    <img src="../Images/chef.png" alt="Image">
+                </div>
 
             </div>
         </div>
@@ -179,63 +242,159 @@
 
 
         <!--INSTAGRAM SECTION-->
-        <div class="instagram-container">
-            <div class="insta-heading">Checkout out @foodieland on instagram</div>
-            <p class="des">Lorem ipsum dolor sit amet, consectetuipisicing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore 
-                magna aliqut enim ad minim
-            </p>
+        <div class="insta-container">
 
-            <div class="row">
-                <img src="../Images/post.png" alt="Image">
-                <img src="../Images/post.png" alt="Image">
-                <img src="../Images/post.png" alt="Image">
-                <img src="../Images/post.png" alt="Image">
+            <div class="insta-heading">
+                <span class="insta-checkout">Checkout out @foodieland on Instagram</span>
+            
+                <div class="des">
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetuipisicing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore 
+                        magna aliqut enim ad minim
+                    </span>
+                </div>
             </div>
 
-            <div class="view-insta">View Our Instagram <i class="fa-brands fa-instagram"></i></div>
+            <div class="insta-photos">
+                <div class="row">
+                    <img src="../Images/post.png" alt="Image">
+                    <img src="../Images/post.png" alt="Image">
+                    <img src="../Images/post.png" alt="Image">
+                    <img src="../Images/post.png" alt="Image">
+                </div>
+
+                <div class="insta-view">Visit Our Instagram <i class="fa-brands fa-instagram"></i></div>
+            </div>
+
         </div>
 
 
 
-        <!--SUBSCRIBE SECTION-->
-        <div class="subs-container">
-            <p class="subs-heading">Deliciousness to your inbox</p>
-            <p class="des">Lorem ipsum dolor sit amet, consectetuipisicing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore 
-                magna aliqut enim ad minim
-            </p>
+        <!--DELICIOUS RECIPE SECTION-->
+        <div class="deli-container">
+            <div class="row">
 
-            <div class="input-subs">
+                <div class="deli-heading">
+                    Try this delicious recipe to make your day
+                </div>
+                <div class="deli-des">
+                    Lorem ipsum dolor sit amet, consectetuipisicing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore 
+                    magna aliqut enim ad minim
+                </div>
+
+            </div>
+
+            <!--CONTAINER NG TABS-->
+            <div class="deli-tabs">
                 <div class="row">
-                    <input type="text" name="search" placeholder="Your email address...">
-                    <input type="button" value="Subscribe">
+
+                    <div class="tab">
+                        <img src="../Images/burger.png" alt="Image">
+                        <div class="deli-name">Big and Juicy Wagyu Beef Cheeseburger</div>
+                        
+                        <div class="time"><i class="fa-solid fa-stopwatch"></i> 30 Minutes</div>
+                    </div>
+
+                    <div class="tab">
+                        <img src="../Images/burger.png" alt="Image">
+                        <div class="deli-name">Big and Juicy Wagyu Beef Cheeseburger</div>
+                        
+                        <div class="time"><i class="fa-solid fa-stopwatch"></i> 30 Minutes</div>
+                    </div>
+
+                    <div class="tab">
+                        <img src="../Images/burger.png" alt="Image">
+                        <div class="deli-name">Big and Juicy Wagyu Beef Cheeseburger</div>
+                        
+                        <div class="time"><i class="fa-solid fa-stopwatch"></i> 30 Minutes</div>
+                    </div>
+
+                    <div class="tab">
+                        <img src="../Images/burger.png" alt="Image">
+                        <div class="deli-name">Big and Juicy Wagyu Beef Cheeseburger</div>
+                        
+                        <div class="time"><i class="fa-solid fa-stopwatch"></i> 30 Minutes</div>
+                    </div>
+
+                    <div class="tab">
+                        <img src="../Images/burger.png" alt="Image">
+                        <div class="deli-name">Big and Juicy Wagyu Beef Cheeseburger</div>
+                        
+                        <div class="time"><i class="fa-solid fa-stopwatch"></i> 30 Minutes</div>
+                    </div>
+
+                    <div class="tab">
+                        <img src="../Images/burger.png" alt="Image">
+                        <div class="deli-name">Big and Juicy Wagyu Beef Cheeseburger</div>
+                        
+                        <div class="time"><i class="fa-solid fa-stopwatch"></i> 30 Minutes</div>
+                    </div>
+
+                    <div class="tab">
+                        <img src="../Images/burger.png" alt="Image">
+                        <div class="deli-name">Big and Juicy Wagyu Beef Cheeseburger</div>
+                        
+                        <div class="time"><i class="fa-solid fa-stopwatch"></i> 30 Minutes</div>
+                    </div>
+
+                    <div class="tab">
+                        <img src="../Images/burger.png" alt="Image">
+                        <div class="deli-name">Big and Juicy Wagyu Beef Cheeseburger</div>
+                        
+                        <div class="time"><i class="fa-solid fa-stopwatch"></i> 30 Minutes</div>
+                    </div>
+
                 </div>
             </div>
         </div>
 
     </div>
+    <!-------------------END OF HOMEPAGE CONTAINER------------------->
 
 
-    <footer>
-        <div class="footer-nav">
-            <div class="row">
-                <div class="foodieland">Foodieland</div>
-                <div class="recipe">Recipe</div>
-                <div class="blog">Blog</div>
-                <div class="contact">Contact</div>
-                <div class="about-us">About Us</div>
-            </div>
-        </div>
+
+    <!-- inbox -->
+    <div class="inbox-discussion">
+        <img src="../Images/salad1.png" alt="salad1" class="salad1">
+        <img src="../Images/salad2.png" alt="salad2" class="salad2">
         
-        <div class="footer-socmed">
-            <div class="row">
-                <div><a href="#"></a><i class="fa-brands fa-facebook"></i></div>
-                <div><a href="#"></a><i class="fa-brands fa-twitter"></i></div>
-                <div><a href="#"></a><i class="fa-brands fa-square-instagram"></i></div>
-            </div>
+        <div class="inbox-text">
+            <h2>Deliciousness to your inbox</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore 
+                magna aliqut enim ad minim
+            </p>
+        </div>
+
+        <div class="subscribeButton">
+            <input type="email" name="discussion" id="discussion" placeholder="Your email address...">
+            <input type="submit" value="Subscribe">
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="upper-footer">
+            <label for="foodieLand">FoodieLand.</label>
+            <ul>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <div class="lower-footer">
+            <span>&copy;2024 Group 9 - ITE1</span>
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
         </div>
     </footer>
-
 </body>
 </html>

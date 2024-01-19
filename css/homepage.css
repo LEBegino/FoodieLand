@@ -7,10 +7,406 @@
     position: relative;
     width: calc(100%/ 12* 12);
     box-sizing: border-box;
-    background-color: darksalmon;
+    padding-top: 7%;
+    font-family: 'Inter', sans-serif;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
+}
+
+
+/*----------------TRENDING RECIPE SECTION----------------*/
+.trend-recipe-container {
+    position: relative;
+    width: calc(100%/12 * 11);
+    box-sizing: border-box;
+    margin: 0 auto 0 auto;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.trend-detail {
+    position: relative;
+    width: calc(100%/12 * 6);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+    background-color: #E7FAFE;
+}
+.trend-detail .trend-label {
+    font-size: 8ex;
+    font-weight: bold;
+    margin-top: 15%;
+}
+.trend-detail .trend-text {
+    font-size: 2ex;
+    margin-top: 3%;
+}
+
+.trend-image {
+    width: calc(100%/12 * 6);
+    box-sizing: border-box;
+}
+.trend-image img{
+    display: block;
+    width: calc(100%/12 * 12);
+    box-sizing: border-box;
+    height: 90vh;
+}
+
+.time-category {
+    position: relative;
+    margin-top: 5%;
+}
+.time-category .time {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100%/ 12 * 3);
+    box-sizing: border-box;
+    padding: 2%;
+    margin-right: 2%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.time-category .food-category {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100%/ 12 * 3);
+    box-sizing: border-box;
+    padding: 2%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.time-category i {
+    margin-right: 5%;
+}
+
+.view-recipe {
+    position: relative;
+    width: calc(100%/ 12 * 4);
+    box-sizing: border-box;
+    text-align: center;
+    padding: 3%;
+    margin-top: 13%;
+    border-radius: 15px;
+    background-color: black;
+}
+.view-recipe a {
+    color: white;
+    text-decoration: none;
+}
+.view-recipe i {
+    margin-left: 10%;
+}
+
+
+
+/*---------------CATEGORIES SECTION---------------*/
+.categories-container {
+    position: relative;
+    width: calc(100%/ 12 * 12);
+    box-sizing: border-box;
+    padding-bottom: 15%;
+    margin-top: 8%;
+}
+.categories-container .title {
+    font-size: 4ex;
+    font-weight: 600;
+    margin-left: 5%;
+}
+
+.categories-tabs {
+    position: relative;
+    width: calc(100%/ 12 * 12);
+    box-sizing: border-box;
+    margin: 5% auto 0 auto;
+}
+.categories-tabs .tab {
+    position: relative;
+    width: calc(100%/ 12 * 1.7);
+    box-sizing: border-box;
+    margin-left: 2.1%;
+    padding-top: 2%;
+    border-radius: 20px;
+    background: linear-gradient(rgba(112, 130, 70, 0), rgba(112, 130, 70, 0.1));
+
+}
+.categories-tabs .tab img {
+    position: relative;
+    margin: auto;
+    height: 15vh;
+    width: calc(100%/ 12 * 6);
+    left: 25%;
+}
+.categories-tabs .tab .tab-text{
+    text-align: center;
+    font-size: 2ex;
+    padding: 15% 0 10% 0;
+}
+
+
+
+/*----------------SIMPLE RECIPE SECTION----------------*/
+.simple-container {
+    position: relative;
+    width: calc(100%/ 12 * 12);
+    box-sizing: border-box;
+}
+
+.simple-heading {
+    position: relative;
+    width: calc(100%/ 12 * 6);
+    box-sizing: border-box;
+    margin: 0 auto 0 auto;
+}
+.simple-heading .title {
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 16%;
+    font-size: 5ex;
+    font-weight: 600;
+}
+.simple-heading .des {
+    text-align: center;
+    font-size: 2ex;
+    margin-top: 3%;
+}
+
+.simple-tabs {
+    position: relative;
+    width: calc(100%/ 12 * 11.5);
+    box-sizing: border-box;
+    margin-left: 2.3%;
+}
+.simple-tabs .tab {
+    position: relative;
+    width: calc(100%/ 12 * 3.5);
+    box-sizing: border-box;
+    margin-left: 3.1%;
+    margin-top: 5%;
+    padding-bottom: 1%;
+    border-radius: 20px;
+    background-image: linear-gradient(rgba(231, 249, 253, 0),rgba(231, 249, 253, 1));
+}
+.simple-tabs .tab img {
+    position: relative;
+    width: calc(100%/12 * 11);
+    box-sizing: border-box;
+    margin: 4% 0 0 4%;
+    border-radius: 20px;
+}
+.recipe-name {
+    position: relative;
+    font-size: 2.5ex;
+    font-weight: 600;
+    padding: 5% 5% 1% 5%;
+}
+
+.simple-tabs .tab .time {
+    position: relative;
+    width: calc(100%/ 12 * 12);
+    box-sizing: border-box;
+    font-size: 2ex;
+    padding: 2%;
+    margin-left: 4%;
+}
+.simple-tabs i {
+    margin-left: 1%;
+}
+
+
+
+/*----------------LEARN MORE SECTION-----------------*/
+.learn-container {
+    position: relative;
+    width: calc(100%/12 * 11);
+    box-sizing: border-box;
+    margin: 10% auto 0 auto;
+    overflow: hidden;
+}
+
+.learn-text {
+    position: relative;
+    width: calc(100%/12 * 5);
+    box-sizing: border-box;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.learn-text .learn-heading {
+    position: relative;
+    font-size: 5ex;
+    font-weight: 700;
+    margin-top: 40%;
+}
+.learn-text .des {
+    position: relative;
+    font-size: 2ex;
+    margin-top: 3%;
+}
+
+.learn-image {
+    width: calc(100%/12 * 6);
+    box-sizing: border-box;
+    margin-left: 3%;
+    background-image: linear-gradient(rgba(231, 249, 253, 0),rgba(231, 249, 253, 1));
+    border-radius: 20px;
+}
+.learn-image img{
+    display: block;
+    width: calc(100%/12 * 12);
+    box-sizing: border-box;
+    height: 90vh;
+}
+
+.learn-more {
+    position: relative;
+    width: calc(100%/ 12 * 3.5);
+    box-sizing: border-box;
+    text-align: center;
+    padding: 3%;
+    margin-top: 13%;
+    border-radius: 15px;
+    background-color: black;
+}
+.learn-more a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+/*------------------INSTAGRAM SECTION----------------*/
+.insta-container {
+    position: relative;
+    width: calc(100%/12 * 11);
+    box-sizing: border-box;
+    margin: 15% auto 0 auto;
+}
+
+.insta-heading {
+    position: relative;
+    width: calc(100%/ 12 * 8);
+    box-sizing: border-box;
+    margin: 0 auto 0 auto;
+}
+
+.insta-heading .insta-checkout {
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 3.5%;
+    font-size: 5ex;
+    font-weight: 600;
+}
+.insta-heading .des {
+    text-align: center;
+    font-size: 2ex;
+    margin-top: 3%;
+}
+
+.insta-photos {
+    position: relative;
+    width: calc(100%/ 12 * 12);
+    box-sizing: border-box;
+    margin: auto;
+    padding-bottom: 1%;
+    border-radius: 20px;
+    background-image: linear-gradient(rgba(231, 249, 253, 0),rgba(231, 249, 253, 1));
+}
+.insta-photos img {
+    display: block;
+    width: calc(100%/12 * 2.6);
+    box-sizing: border-box;
+    height: 50%;
+    margin: auto;
+}
+
+.insta-view {
+    position: relative;
+    width: calc(100%/12 * 2);
+    box-sizing: border-box;
+    margin: 5% auto;
+    padding: 1.5%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+
+
+
+
+/*----------------DELICIOUS RECIPE SECTION---------------*/
+.deli-container {
+    position: relative;
+    width: calc(100%/ 12 * 11);
+    box-sizing: border-box;
+    margin: 10% auto;
+    padding-bottom: 5%;
+}
+
+.deli-heading {
+    position: relative;
+    width: calc(100%/ 12 * 6);
+    box-sizing: border-box;
+    font-size: 6ex;
+    font-weight: 600;
+}
+.deli-des {
+    position: relative;
+    width: calc(100%/ 12 * 6);
+    box-sizing: border-box;
+    font-size: 2.3ex;
+    margin-top: 2%;
+    text-align: center;
+}
+
+
+.deli-tabs {
+    position: relative;
+    width: calc(100%/ 12 * 12);
+    box-sizing: border-box;
+    margin-top: 2%;
+}
+.deli-tabs .tab {
+    position: relative;
+    width: calc(100%/ 12 * 2.8);
+    box-sizing: border-box;
+    margin: 1% auto;
+    padding-bottom: 1%;
+    border-radius: 20px;
+    
+}
+.deli-tabs .tab img {
+    position: relative;
+    width: calc(100%/12 * 11);
+    box-sizing: border-box;
+    margin: 4% 0 0 4%;
+    border-radius: 20px;
+}
+.deli-name {
+    position: relative;
+    font-size: 2.5ex;
+    font-weight: 600;
+    padding: 5% 5% 1% 5%;
+}
+
+.deli-tabs .tab .time {
+    position: relative;
+    width: calc(100%/ 12 * 12);
+    box-sizing: border-box;
+    font-size: 2ex;
+    padding: 2%;
+    margin-left: 4%;
+}
+.deli-tabs i {
+    margin-left: 1%;
 }
