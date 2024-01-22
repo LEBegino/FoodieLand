@@ -7,7 +7,7 @@
     position: relative;
     width: calc(100%/ 12 * 12);
     box-sizing: border-box;
-    padding-top: 7%;
+    padding-top: 10%;
     font-family: 'Inter', sans-serif;
 }
 
@@ -33,7 +33,16 @@
     display: block;
     width: calc(100%/12 * 12);
     box-sizing: border-box;
-    height: 100vh;
+    height: 120vh;
+}
+
+.want-join {
+    position: relative;
+    width: calc(100%/12 * 12);
+    box-sizing: border-box;
+    bottom: 242%;
+    font-size: 4ex;
+    font-weight: 600;
 }
 
 
@@ -162,13 +171,13 @@
     color: gray;
 }
 
-.login {
+.login-link {
     position: relative;
     margin: auto;
     padding-top: 10%;
     color: grey;
 }
-.login a {
+.login-link a {
     text-decoration: none;
     color: black;
 }
