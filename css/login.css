@@ -33,7 +33,7 @@
     display: block;
     width: calc(100%/12 * 12);
     box-sizing: border-box;
-    height: 120vh;
+    height: 70vh;
 }
 
 
@@ -41,7 +41,7 @@
     position: relative;
     width: calc(100%/12 * 5);
     box-sizing: border-box;
-    height: 29.5vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     margin: 3% 0 0 3%;
@@ -85,6 +85,7 @@
     border-radius: 10px;
     color: white;
     background-color: black;
+    cursor: pointer;
 }
 
 .text-join {
@@ -93,64 +94,9 @@
     color: darkgrey;
 }
 
-
-.socmed-buttons {
-    position: relative;
-    width: calc(100%/12 * 12);
-    box-sizing: border-box;
-    margin: auto;
-    padding-top: 5%;
-}
-
-
-.google {
-    position: relative;
-    width: calc(100%/12 * 5.8);
-    margin: auto;
-}
-.google button {
-    position: relative;
-    width: calc(100%/12 * 12);
-    height: 6vh;
-    border: solid 1px gray;
-    border-radius: 10px;
-    background-color: white;
-}
-.google img {
-    display: block;
-    height: 5vh;
-}
-.google .text {
-    margin: auto;
-    color: gray;
-}
-
-.fb {
-    position: relative;
-    width: calc(100%/12 * 5.8);
-    margin: auto;
-}
-.fb button {
-    position: relative;
-    width: calc(100%/12 * 12);
-    height: 6vh;
-    border: solid 1px gray;
-    border-radius: 10px;
-    background-color: white;
-}
-.fb img {
-    display: block;
-    height: 5vh;
-}
-.fb .text {
-    margin: auto;
-    color: gray;
-}
-
 .signup-link {
     position: relative;
     margin: auto;
-    padding-top: 10%;
     color: grey;
 }
 .signup-link a {
