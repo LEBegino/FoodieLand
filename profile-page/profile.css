@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: Inter;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    background-color: #FAF9F6;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    /* display: none; */
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1rem;
+    
+}
+
+nav ul {
+    float: right;
+    line-height: 80px;
+    margin-right: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+    transition: 2s;
+}
+
+label.logo {
+    line-height: 80px;
+    margin: 0 2rem;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: 'Lobster', sans-serif;
+    padding-right: 100px;
+}
+
+.nav-icon {
+    margin-left: 9rem;
+}
+
+.buttons {
+    margin: 25px auto;
+}
+
+#login, #signup {
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+#login {
+    background-color: gray;
+    border: solid gray 1px;
+}
+
+#signup {
+    background-color: black;
+    color: #f0f0f0;
+    border: solid black 1px;
+}
+
+.sidebar {
+            height: 700px;
+            width: 200px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            padding-top: 20px;
+            color: #fff;
+            text-align: center;
+            border-right: solid #d6cdcd 1px;
+        }
+
+        .icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .profile, .favorites {
+            padding: 15px;
+            margin-top: 1px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .profile:hover, .favorites:hover {
+            background-color: #d6cdcd ;
+        }
+
+        .profile {
+            background-color: black;
+        }
+
+        .favorites {
+         color: #000000;
+         border: solid black 1px;
+        }
+
+        .side {
+            margin-top: 100px;
+        }
+
+        .profile-container {
+            padding-top: 180px;
+        }
+
+        .profile1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        .profile1 h2 {
+         padding-right: 500px;
+        }
+
+        .profile1 button {
+           height: 40px;
+           width: 90px;
+           margin-left: 120px;
+           background-color: #000000;
+           border-radius: 10px;
+           color: #f0f0f0;
+           border: #000000 solid 1px;
+           cursor: pointer;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-right: 500px;
+           
+            
+        }
+        
+        #profile-image {
+            width: 70px;
+            height: 70px; /* Set a fixed height to maintain a square aspect ratio */
+            border-radius: 40px;
+            margin-right: 50px;
+            cursor: pointer;
+            background-size: cover;
+        }
+
+
+        #photo-button {
+            width: 140px;
+            height: 30px;
+            margin-top: 20px;
+            background-color: #000000;
+            color: #f0f0f0;
+            border: #000000 solid 1px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .form-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .container .text{
+            text-align: center;
+            font-size: 35px;
+            font-weight: 600;
+          }
+       
+          .container form .form-row{
+            display: flex;
+            margin: 32px 0;
+          }
+          form .form-row .input-data{
+            width: 100%;
+            height: 40px;
+            margin: 0 20px;
+            position: relative;
+          }
+          form .form-row .textarea{
+            height: 70px;
+          }
+          .input-data input,
+          .textarea textarea{
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: none;
+            font-size: 17px;
+            border-bottom: 2px solid rgba(0,0,0, 0.12);
+          }
+          .input-data input:focus ~ label, .textarea textarea:focus ~ label,
+          .input-data input:valid ~ label, .textarea textarea:valid ~ label{
+            transform: translateY(-20px);
+            font-size: 14px;
+            color: #000000;
+          }
+          .textarea textarea{
+            resize: none;
+            padding-top: 10px;
+          }
+          .input-data label{
+            position: absolute;
+            pointer-events: none;
+            bottom: 30px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+          }
+          .textarea label{
+            width: 100%;
+            bottom: 40px;
+            background: #fff;
+          }
+          .input-data .underline{
+            position: absolute;
+            bottom: 0;
+            height: 2px;
+            width: 100%;
+          }
+          .input-data .underline:before{
+            position: absolute;
+            content: "";
+            height: 3px;
+            width: 100%;
+            background: black;
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 0.3s ease;
+          }
+          .input-data input:focus ~ .underline:before,
+          .input-data input:valid ~ .underline:before,
+          .textarea textarea:focus ~ .underline:before,
+          .textarea textarea:valid ~ .underline:before{
+            transform: scale(1);
+          }
+          
+          #change-button button{
+            background-color: Transparent;
+            background-repeat:no-repeat;
+            border: none;  
+            margin-left: 700px;
+            cursor: pointer;
+            margin-bottom: 40px;
+          }
+           
+          #connect h5 {
+            margin-left: 10px;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+          }
+
+          .google-logo img {
+            width: 50px;
+            margin-left: 10px;
+          }
+
+          #gmail {
+            font-size: 12px;
+            color:#d6cdcd;
+          }
+
+          #disconnect-button  {
+            background-color: Transparent;
+            background-repeat:no-repeat;
+            border: none;  
+            cursor: pointer;
+            
+          }
+          
+          footer {
+            margin: 10rem 0 0 4rem;
+            width: 90%;
+            height: 30vh;
+            position: relative;
+            z-index: 10;
+        }
+        
+        
+        .upper-footer ul li {
+            display: inline-block;
+            padding: 0 1rem;
+            font-size: 19px;
+        }
+        
+        .upper-footer {
+            padding-bottom: 4rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .upper-footer ul {
+            float: right;
+            line-height: 80px;
+        }
+        
+        .upper-footer a {
+            text-decoration: none;
+            color: #000000;
+        }
+        
+        .upper-footer label {
+            line-height: 80px;
+            font-family: 'Lobster', sans-serif;
+            font-size: 24px;
+        }
+        
+        .lower-footer span {
+            line-height: 80px;
+            margin-left: 30rem;
+            font-size: 18px;
+        }
+        
+        .lower-footer ul li {
+            display: inline-block;
+            padding: 0 1rem;
+            line-height: 80px;
+        }
+        
+        .lower-footer a {
+            text-decoration: none;
+            color: #000000;
+        }
+        
+        .lower-footer ul {
+            float: right;
+        }
+
+        .sign-out-section {
+            display: flex;
+            margin-left: 20px;
+            margin-top: 50px;
+        }
+        .sign-out-icon img {
+           width: 20px;
+           margin-right: 20px;
+           cursor: pointer;
+        }
+
+        .sign-out-button {
+            background-color: Transparent;
+            background-repeat:no-repeat;
+            border: none;  
+            cursor: pointer;
+        }

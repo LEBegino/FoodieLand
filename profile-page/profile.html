@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="profile.css">
+     <script src="js-for-profile-page/profile.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <label class="logo">FoodieLand</label>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="{{ url_for('blogList') }}">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <div class="buttons">
+                <button id="login"> Log In </button>
+                <button id="signup"> Sign Up</button>
+            </div>
+        </nav>
+
+        <div class="profile-container">
+            <div class="profile1">
+                 <h2>Profile</h2>
+                 <button>Save</button>
+            </div>
+
+            <div class="image-container">
+                <div>
+                    <img id="profile-image" src="chef.jfif" alt="">
+                </div>
+                <div>
+                    <input type="file" id="file-input" style="display: none;" accept="image/*" onchange="handleFileSelect(event)">
+                    <label for="file-input">
+                        <button id="photo-button" onclick="document.getElementById('file-input').click()">Change Photo</button>
+                    </label>
+                </div>
+            </div>
+            <div class="form-container">
+                <form action="#">
+                    <div class="form-row">
+                       <div class="input-data">
+                          <input type="text" required>
+                          <div class="underline"></div>
+                          <label for="">Full Name</label>
+                       </div>
+                       <div class="input-data">
+                          <input type="text" required>
+                          <div class="underline"></div>
+                          <label for="">Username</label>
+                       </div>
+                    </div>
+                    <div class="form-row">
+                       <div class="input-data">
+                          <input type="text" required>
+                          <div class="underline"></div>
+                          <label for="">Email Address</label>
+                       </div>
+                       <div class="input-data">
+                          <input type="text" required>
+                          <div class="underline"></div>
+                          <label for="">Password</label>
+                       </div>
+                    </div>
+                     <div id="change-button">
+                        <button>Change</button>
+                     </div>
+                     <div id="connect">
+                        <h5> Connected Accounts</h5>
+                     </div>
+
+                     <div class="google-logo"> <img src="g.png" alt=""></div>
+
+                     <div class="form-row">
+                        <div class="input-data">
+                           <div class="underline"></div>
+                           <label id="gmail" for="">@kaysusantayo@gmail.com</label>
+                        </div>
+                        <button id="disconnect-button">Disconnect</button>
+                     </div>
+
+                     <div class="sign-out-section">
+                        <div class="sign-out-icon">
+                            <img src="signout-icons.png" alt="">
+                        </div>
+                        <button class="sign-out-button">Sign Out</button>
+                    </div>
+
+                 </form>
+                 
+            </div>
+            
+        </div>
+
+        <div class="sidebar">
+            <div class="side">
+                <div class="profile">
+                    <span class="icon">&#128100;</span> Profile
+                </div>
+                <div class="favorites">
+                    <span class="icon">&#10084;</span> Favorites
+                </div>
+            </div>
+            
+        </div>
+
+        <footer>
+            <div class="upper-footer">
+                <label for="foodieLand">FoodieLand.</label>
+                <ul>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="lower-footer">
+                <span>&copy;2024 Group 9 - ITE1</span>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+
+
+    </div>
+
+    
+    
+</body>
+</html>
